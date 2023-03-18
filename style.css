@@ -1,4 +1,5 @@
-h1 {
-  font-size: xx-large;
-  color: azure;
+table,
+th,
+td {
+  border: 1px solid black;
 }
