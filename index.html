@@ -5,19 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>What's going on?</title>
   </head>
   <body>
     <table>
       <tr>
-        <th>01</th>
-        <th>02</th>
-        <th>03</th>
+        <th colspan="2">Hi, I'm your first cell.</th>
+        <th rowspan="2">I'm your second cell.</th>
+        <th>I'm your third cell.</th>
+        <th>I'm your fourth cell.</th>
       </tr>
-      <td>hello</td>
-      <td>hola</td>
-      <td>bye</td>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+      </tr>
     </table>
+
+    <table>
+      <colgroup>
+        <col style="background-color: blue" />
+        <col style="background-color: red" />
+      </colgroup>
+      <tr>
+        <th>Data 1</th>
+        <th>Data 2</th>
+      </tr>
+      <tr>
+        <td>Calcutta</td>
+        <td>Orange</td>
+      </tr>
+      <tr>
+        <td>Robots</td>
+        <td>Jazz</td>
+      </tr>
+    </table>
+
     <script src="script.js"></script>
   </body>
 </html>
