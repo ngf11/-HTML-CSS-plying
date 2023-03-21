@@ -13,7 +13,8 @@ table {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid gray;
   align-content: center;
   padding: 10px;
+  width: 42px;
 }
