@@ -1,3 +1,5 @@
-.group1 ~ div {
-  background-color: red;
+p:hover::first-line {
+  background-color: yellow;
+  opacity: 0.2;
+  transition: left ease-out 5s;
 }
