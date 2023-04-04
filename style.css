@@ -1,5 +1,17 @@
-p:hover::first-line {
-  background-color: yellow;
-  opacity: 0.2;
-  transition: left ease-out 5s;
+.box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+#box1 {
+  background-color: red;
+  z-index: 2;
+}
+
+#box2 {
+  background-color: blue;
+  z-index: 1;
 }
