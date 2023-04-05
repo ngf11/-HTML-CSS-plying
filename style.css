@@ -15,3 +15,8 @@
   background-color: blue;
   z-index: 1;
 }
+body {
+  background: linear-gradient(50deg, blue, red);
+
+  /* height: 100vh; */
+}
