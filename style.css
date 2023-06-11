@@ -1,9 +1,7 @@
 :root {
-  --header-color: rgb(224, 224, 56);
-  --sidebar-color: salmon;
-  --nav-color: lightblue;
-  --artical-color: rgb(143, 191, 194);
-  --footer-color: rgb(84, 82, 82);
+  --header-footer-color: #3f4552ff;
+  --sidebar-nav-color: #ff7754ff;
+  --artical-color: #bccbdeff;
   --font-color: white;
 }
 * {
@@ -26,36 +24,15 @@ body {
     "footer footer footer footer";
   overflow: auto;
   gap: 4px;
-  /* padding: 15px; */
 }
-.item {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  color: var(--font-color);
-  border-radius: 10px;
-}
+
 #header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "logo .. link link link link";
   grid-area: header;
-  background-color: var(--header-color);
-}
-
-#sidebar {
-  grid-area: side;
-  background-color: var(--sidebar-color);
-}
-
-#nav {
-  grid-area: nav;
-  background-color: var(--nav-color);
-}
-
-#artical {
-  grid-area: artical;
-  background-color: var(--artical-color);
-}
-
-#footer {
-  grid-area: footer;
-  background-color: var(--footer-color);
+  background-color: var(--header-footer-color);
+  color: white;
+  padding: 4px;
+  text-align: center;
 }
