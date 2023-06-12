@@ -45,15 +45,33 @@ body {
 #nav {
   grid-area: nav;
   background-color: var(--sidebar-nav-color);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  align-items: center;
 }
 
 #articals {
   grid-area: artical;
   background-color: var(--artical-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  overflow: auto;
+  padding: 10px;
+  gap: 10px;
 }
 
 #footer {
   grid-area: footer;
   background-color: var(--header-footer-color);
   color: white;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
 }
