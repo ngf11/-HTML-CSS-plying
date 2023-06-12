@@ -34,5 +34,26 @@ body {
   background-color: var(--header-footer-color);
   color: white;
   padding: 4px;
-  text-align: center;
+  overflow: auto;
+}
+
+#sidebar {
+  grid-area: side;
+  background-color: var(--sidebar-nav-color);
+}
+
+#nav {
+  grid-area: nav;
+  background-color: var(--sidebar-nav-color);
+}
+
+#articals {
+  grid-area: artical;
+  background-color: var(--artical-color);
+}
+
+#footer {
+  grid-area: footer;
+  background-color: var(--header-footer-color);
+  color: white;
 }
