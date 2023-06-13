@@ -1,6 +1,6 @@
 :root {
   --header-footer-color: #3f4552ff;
-  --sidebar-nav-color: #ff7754ff;
+  --sidebar-nav-color: rgb(220, 51, 8);
   --artical-color: #bccbdeff;
   --font-color: white;
 }
@@ -11,12 +11,12 @@
 body {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr) repeat(1, 4fr);
-  grid-template-rows: repeat(2, 1fr) repeat(1, 3fr) repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr) repeat(auto-fit, 4fr);
+  grid-template-rows: repeat(2, 1fr) repeat(auto-fit, 3fr) repeat(auto-fit, 1fr);
   grid-template-areas:
     "header header header header"
     "side nav nav nav"
@@ -28,12 +28,12 @@ body {
 
 #header {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-areas: "logo .. link link link link";
+  grid-template-columns: repeat(1, 1fr);
   grid-area: header;
+
   background-color: var(--header-footer-color);
   color: white;
-  padding: 4px;
+  padding: 20px;
   overflow: auto;
 }
 
@@ -56,13 +56,14 @@ body {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   align-items: center;
+  padding: 20px;
 }
 
 #articals {
   grid-area: artical;
   background-color: var(--artical-color);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-template-rows: repeat(4, 1fr);
   /* overflow: auto; */
   padding: 10px;
@@ -80,4 +81,14 @@ body {
   background-color: white;
   padding: 40px;
   text-align: center;
+}
+.logo-links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "logo .. link link link link";
+  gap: 40px;
+}
+
+.links {
+  text-align: end;
 }
